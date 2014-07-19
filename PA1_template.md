@@ -1,3 +1,8 @@
+---
+output:
+  html_document:
+    keep_md: yes
+---
 # Reproducible Research: Peer Assessment 1
 
 
@@ -85,7 +90,7 @@ summary(dailysteps)
 hist(dailysteps$steps, main = "Histogram of steps per day", xlab="Steps")
 ```
 
-![plot of chunk unnamed-chunk-5](./PA1_template_files/figure-html/unnamed-chunk-5.png) 
+![plot of chunk unnamed-chunk-5](figures/unnamed-chunk-5.png) 
 
 2) Calculate the mean and median total steps per day.
 
@@ -137,7 +142,7 @@ myplot <- ggplot(activity, aes(x=interval, y=steps)) + geom_line() +
 myplot
 ```
 
-![plot of chunk unnamed-chunk-8](./PA1_template_files/figure-html/unnamed-chunk-8.png) 
+![plot of chunk unnamed-chunk-8](figures/unnamed-chunk-8.png) 
 
 2) Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -215,7 +220,7 @@ summary(dailysteps2)
 hist(dailysteps2$steps, main = "Histogram of steps per day (imputed vals)", xlab="Steps")
 ```
 
-![plot of chunk unnamed-chunk-12](./PA1_template_files/figure-html/unnamed-chunk-12.png) 
+![plot of chunk unnamed-chunk-12](figures/unnamed-chunk-12.png) 
 
 Calculate the mean and median total steps per day.
 
@@ -277,4 +282,4 @@ myplot <- ggplot(fullactivity, aes(x=interval, y=steps)) + geom_line() +
 myplot + facet_grid(wd ~ .)
 ```
 
-![plot of chunk unnamed-chunk-15](./PA1_template_files/figure-html/unnamed-chunk-15.png) 
+![plot of chunk unnamed-chunk-15](figures/unnamed-chunk-15.png) 
